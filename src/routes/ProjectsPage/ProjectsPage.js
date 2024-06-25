@@ -48,8 +48,8 @@ function ProjectsPage(props) {
       <div className="lg:h-full lg:align-middle lg:items-center dark:bg-transparent">
         {Object.keys(entries).map(eType => {
           const entryCategory = entries[eType];
-          return <div key={eType}>
-            <div className="p-2 my-2 mx-2 sm:mx-4 lg:mx-8 dark:bg-neutral-900/75 rounded-lg w-fit">
+          return <div key={eType} className="px-2 sm:px-4 lg:px-8">
+            <div className="w-full md:w-72 p-2 mt-8 mb-2 dark:bg-neutral-900/75 rounded-lg w-fit">
               <h1 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{entryCategory.title}</h1>
             </div>
             <div className="align-middle md:flex flex-wrap justify-start">
@@ -59,7 +59,7 @@ function ProjectsPage(props) {
                   setEntryType(eType);
                   setEntryKey(key);
                   setOpenModal(true);
-                  }} key={key} imgAlt={entry.title} imgSrc={entry.image} className="w-72 my-2 mx-2 sm:mx-4 lg:mx-8 max-w-full dark:bg-neutral-900/75 dark:border-none">
+                  }} key={key} imgAlt={entry.title} imgSrc={entry.image} className="w-full md:w-72 my-2 md:mr-4 lg:mr-8 last:mr-0 cursor-pointer dark:bg-neutral-900/75 dark:border-none">
                 <div className="w-full">
                   <h3 className="font-black">{entry.title}</h3>
                   <span className="text-sm">{entry.company} - {entry.year}</span>
