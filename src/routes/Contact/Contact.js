@@ -1,4 +1,6 @@
-import { Button, Card } from "flowbite-react";
+import { useState } from "react";
+import { Button, Card, Toast } from "flowbite-react";
+import { HiCheck } from "react-icons/hi";
 
 import './Contact.css';
 
@@ -11,7 +13,33 @@ const customTheme = {
   }
 };
 
+let toastTimer;
+
 function Contact() {
+  const [showToast, setShowToast] = useState(false);
+
+  function toast() {
+    setShowToast(true);
+    if (toastTimer != null) {
+      clearTimeout(toastTimer);
+    }
+    toastTimer = setTimeout(() => {
+      setShowToast(false);
+    }, 3000);
+  }
+  
+  function copyGmail() {
+  
+    navigator.clipboard.writeText('nifty@codenifty.io');
+    toast();
+  }
+
+  function copyDiscord() {
+  
+    navigator.clipboard.writeText('nifty255');
+    toast();
+  }
+
   return (
     <>
       <div className="bgimage bgcontact fixed bg-fixed"></div>
@@ -29,7 +57,7 @@ function Contact() {
               <div className="text-center basis-1/2 md:w-1/3 lg:basis-1/3 p-2">
                 <img alt="GMail" className="w-16 inline rounded-full" src="/img/logo/gmail.jpg" />
                 <br /><br />
-                <Button fullSized color="orange" theme={customTheme} className="inline text-center xl:w-3/4 tx:w-1/4 text-black">nifty@codenifty.io</Button>
+                <Button fullSized color="orange" theme={customTheme} onClick={copyGmail} className="inline text-center xl:w-3/4 tx:w-1/4 text-black">nifty@codenifty.io</Button>
               </div>
               <div className="text-center basis-1/2 md:w-1/3 lg:basis-1/3 p-2">
                 <img alt="GitHub" className="w-16 inline rounded-full" src="/img/logo/github.png" />
@@ -44,7 +72,7 @@ function Contact() {
               <div className="text-center basis-1/2 md:w-1/3 lg:basis-1/3 p-2">
                 <img alt="Discord" className="w-16 inline rounded-full" src="/img/logo/discord.jpg" />
                 <br /><br />
-                <Button fullSized color="orange" theme={customTheme} className="inline text-center xl:w-3/4 tx:w-1/4 text-black">nifty255</Button>
+                <Button fullSized color="orange" theme={customTheme} onClick={copyDiscord} className="inline text-center xl:w-3/4 tx:w-1/4 text-black">nifty255</Button>
               </div>
               <div className="text-center basis-1/2 md:w-1/3 lg:basis-1/3 p-2">
                 <img alt="Twitch" className="w-16 inline rounded-full" src="/img/logo/twitch.jpg" />
@@ -60,6 +88,16 @@ function Contact() {
           </Card>
         </div>
       </div>
+      {showToast &&
+        <div className="w-full fixed bottom-8 flex justify-around">
+          <Toast className="dark:bg-neutral-800">
+            <div className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-green-700 text-green-300">
+              <HiCheck className="h-5 w-5" />
+            </div>
+            <div className="ml-3 font-normal">Copied!</div>
+          </Toast>
+        </div>
+      }
     </>
   );
 }
