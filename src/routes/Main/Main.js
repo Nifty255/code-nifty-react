@@ -17,7 +17,7 @@ function Main() {
       <div className="bgimage bgmain fixed bg-fixed"></div>
       <div className="flex lg:h-full lg:align-middle lg:items-center dark:bg-transparent">
         <div className="align-middle md:flex flex-row grow justify-between">
-          <Card className="m-2 sm:m-4 md:m-8 basis-full md:basis-1/2 dark:bg-neutral-900/75 dark:border-transparent">
+          <Card className="my-2 mx-2 sm:mx-4 lg:mx-8 basis-full md:basis-1/2 dark:bg-neutral-900/75 dark:border-transparent">
             <h1 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">I'm Nifty255</h1>
             <div>
               <img alt="Nifty255" className="w-0 h-0 m-0 lg:w-16 lg:h-16 lg:mr-2 lg:mb-2 float-start rounded-full" src="https://i.imgur.com/UW15CZz.jpg" />
@@ -31,7 +31,7 @@ function Main() {
               </ul>
             </div>
           </Card>
-          <Card className="m-2 sm:m-4 md:m-8 basis-full md:basis-1/2 dark:bg-neutral-900/75 dark:border-transparent">
+          <Card className="my-2 mx-2 sm:mx-4 lg:mx-8 basis-full md:basis-1/2 dark:bg-neutral-900/75 dark:border-transparent">
             <h1 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Socials</h1>
             <div className="flex flex-wrap">
               <div className="text-center basis-1/2 md:w-1/3 lg:basis-1/3 p-2">

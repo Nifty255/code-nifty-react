@@ -17,13 +17,13 @@ function Contact() {
       <div className="bgimage bgcontact fixed bg-fixed"></div>
       <div className="flex lg:h-full lg:align-middle lg:items-center dark:bg-transparent">
         <div className="align-middle md:flex flex-row grow justify-between">
-          <Card className="m-2 sm:m-4 md:m-8 basis-full md:basis-1/2 dark:bg-neutral-900/75 dark:border-transparent">
+          <Card className="my-2 mx-2 sm:mx-4 lg:mx-8 basis-full md:basis-1/2 dark:bg-neutral-900/75 dark:border-transparent">
             <h1 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">For more information,</h1>
             <div>
               <p>Please feel free to contact me through any one of my socials on the right, or just stare at the curry in the background for the wisdom within...</p>
             </div>
           </Card>
-          <Card className="m-2 sm:m-4 md:m-8 basis-full md:basis-1/2 dark:bg-neutral-900/75 dark:border-transparent">
+          <Card className="my-2 mx-2 sm:mx-4 lg:mx-8 basis-full md:basis-1/2 dark:bg-neutral-900/75 dark:border-transparent">
             <h1 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Socials</h1>
             <div className="flex flex-wrap">
               <div className="text-center basis-1/2 md:w-1/3 lg:basis-1/3 p-2">
