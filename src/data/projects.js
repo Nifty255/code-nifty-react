@@ -114,8 +114,8 @@ const PROJECTS = {
             "techs": [
               "JavaScript",
               "React.js",
-              "Tailwind CSS",
-              "Flowbite"
+              "Nginx",
+              "Tailwind CSS"
             ],
             "longDesc": `
                   <p>Code Nifty is a React site designed as a repository of my previous and current works and accomplishments. (It's this site right here!) Please enjoy your visit. Might I suggest the VR section below?</p>
