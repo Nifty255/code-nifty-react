@@ -171,7 +171,7 @@ const PROJECTS = {
               "Photoshop"
             ],
             "longDesc": `
-                  <p class="pb-4">Kerbal Mechanics ("KM" for short) was a mod for Kerbal Space Program which provided some extra challenge by adding rocket part failure events and the ability to choose the quality of parts to the game. Players can build using higher quality parts which are more expensive but less likely to fail, or cheaper, lower quality parts which might fail more often.</p>
+                  <p class="pb-4">Kerbal Mechanics ("KM" for short) was a mod for Kerbal Space Program which provided some extra challenge by adding rocket part failure events and the ability to choose the quality of parts. Players can build using higher quality parts which are more expensive but less likely to fail, or cheaper, lower quality parts which might fail more often.</p>
                   <p class="pb-4">KM also featured an option to fix broken parts either properly by carrying rocket parts with the vessel, or improperly by kicking the part (and possibly causing the part to destroy itself).</p>
                   <p>Support by myself for the mod has since been dropped.</p>
                 `
