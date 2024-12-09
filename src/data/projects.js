@@ -135,8 +135,8 @@ const PROJECTS = {
             "longDesc": `
                   <p class="pb-4">Boss Battles is an on-stream minigame for Twitch livestreamers. Fans contribute bits, subscriptions, or tips to damage the Boss. The fan who deals the final blow becomes the next Boss.</p>
                   <p class="pb-4">Developed using Bootstrap, jQuery, and served by Node.js, Bit Boss Battles launched as a personal project on Feb 19, 2017 and quickly gained popularity, reaching thousands of streamers within just 3 months. Shortly thereafter, Boss Battles was aquired by Opera Event for equity stake in the company as well as a position on the team. In September of that same year, skin customization and additional game modes were added. Analytics estimated that, from September 2017 to 2018, Boss Battles processed over $5 million in contributions through Twitch.</p>
-                  <p>Finally, following a shutdown due to Twitch deprecating certain APIs in 2021, I reacquired Bit Boss Battles from Opera Event, updated the Node.js engine, fixed the broken interfaces, and re-opened it within the span of only 2 days.</p>
-                  <p>Bit Boss Battles has since been shut down again due to fiscal challenes.</p>
+                  <p class="pb-4">Finally, following a shutdown due to Twitch deprecating certain APIs in 2021, I reacquired Bit Boss Battles from Opera Event, updated the Node.js engine, fixed the broken interfaces, and re-opened it within the span of only 2 days.</p>
+                  <p>Bit Boss Battles has since been shut down again due to fiscal challenges.</p>
                 `
           }
         }
